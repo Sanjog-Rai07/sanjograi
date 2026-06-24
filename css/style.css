@@ -86,3 +86,53 @@ footer{
 	text-align: center;
 	padding: 30px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	header{
+		height: auto;
+		padding: 40px 20px
+	}
+	nav{
+		position: static;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	nav a{
+		display: inline-block;
+		margin: 8px	
+	}
+	.hero{
+		flex-direction: column-reverse;
+		text-align: center;
+		gap: 30px;
+	}
+	.hero-text{
+		max-width: 100%;
+	}
+	.hero-text h1{
+		font-size: 42px;
+	}
+	.hero-text p{
+		font-size: 16px;
+	}
+	.hero-img{
+		width: 220px;
+		max-width: 100%;
+	}
+	.btn{
+		display: block;
+		padding: 10px auto;
+		width: fit-content;
+	}
+	section{
+		padding: 60px 20px;
+	}
+	.section-title{
+		font-size: 32px;
+		text-align: center;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
