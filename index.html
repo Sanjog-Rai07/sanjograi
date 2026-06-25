@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sanjog Rai | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjog Rai | Portfolio</title>
 
-	<link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
-	<nav>
-		<a href="#about">About</a>
-		<a href="#skills">Skills</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
-	</nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"> SANJOG RAI </div>
+    <!-- Dark/Light mode + Accent Theme -->
+    <div class="controls">
+      <button id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="theme-picker">
+        <span class="color blue"></span>
+        <span class="color orange"></span>
+        <span class="color green"></span>
+        <span class="color purple"></span>
+      </div>
+    </div>
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-	<header>
-		<div class="hero">
-			<div class="hero-text">
-				<h3>Hello 👋</h3>
-				<h1>I'm <span>Sanjog Rai</span></h1>
-				<p>WordPress Developer & Frontend Enthusiast</p>
-				<a href="#about" class="btn">About Me</a>
-				<a href="#projects" class="btn">My Projects</a>
-			</div>
-			<img src="images/profile.png" alt="Sanjog Rai">
-		</div>
-	</header>
+  <!-- Hero -->
+  <header id="home">
+    <div class="hero">
+      <div class="hero-content">
+        <p class="intro">
+          Hello, I'm
+        </p>
+        <h1>
+          Sanjog Rai
+        </h1>
+        <h2>
+          Building digital experience that matter.
+        </h2>
+        <p class="description">
+          I create beautiful, functional websites that help businesses succeed online. WordPress Developer with 3+ years of experience creating responsive and user-friendly websites.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#" class="btn-outline">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/profile.png" alt="Sanjog Rai">
+      </div>
+    </div>
+  </header>
 
-	<section id="about">
-		<h2 class="section-title">About Me</h2>
-		<p>
-			I am a passionate WordPress Developer and Frontend Enthusiast with a keen eye for design and user experience. I specialize in creating responsive and visually appealing websites that not only look great but also perform exceptionally well. With a strong foundation in HTML, CSS, JavaScript, and PHP, I enjoy bringing ideas to life through code. My goal is to continuously learn and grow as a developer while contributing to meaningful projects that make a difference.
-		</p>
-	</section>
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">
+      About Me
+    </h2>
+    <p>
+      I am a passionate WordPress Developer with over 3 years of experience in creating responsive and user-friendly websites. My expertise lies in developing custom themes and plugins, optimizing website performance, and ensuring a seamless user experience. I am dedicated to helping businesses establish a strong online presence through innovative web solutions.
+    </p>
+  </section>
 
-	<section id="skills">
-		<h2 class="section-title">Skills</h2>
-		
-		<div class="skills">
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">
+      Projects
+    </h2>
+    <div class="project-card">
+      <h3>
+        Portfolio Website
+      </h3>
+      <p>
+        A personal portfolio website showcasing my skills, projects, and experience as a WordPress Developer. Built with HTML, CSS, and JavaScript, it features a responsive design and smooth animations.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">
+      Contact Me
+    </h2>
+    <p>
+      Feel free to reach out to me for any inquiries or collaboration opportunities. You can contact me via email at 
+      <a href="mailto:sanjograi640@gmail.com">sanjograi640@gmail.com</a>
+    </p>
+  </section>
 
-			<div class="card">
-				<h3>WordPress</h3>
-				<p>Theme Devlopment & Customization</p>
-			</div>
+  <!---JS-->
+  <script src="/js/main.js"></script>
 
-			<div class="card">
-				<h3>Frontend</h3>
-				<p>HTML, CSS, JavaScript</p>
-			</div>
-
-			<div class="card">
-				<h3>Git & GitHub</h3>
-				<p>Version Control</p>
-			</div>
-
-			<div class="card">
-				<h3>SEO</h3>
-				<p>Help optimize the website</p>
-			</div>
-
-		</div>		
-	</section>
-	
-	<section id="projects">
-		<h2 class="section-title">
-			<div class="card project">
-				<h3>Portfolio Website</h3>
-				<p>Personal portfolio hosted on GitHub Pages.</p>
-			</div>
-			<div class="card project">
-				<h3>WordPress Business Website</h3>
-				<p>Responsive business website using WordPress.</p>
-			</div>
-		</h2>
-	</section>
-
-	<section id="contact">
-		<h2 class="sectio-title">Contact</h2>
-		<p>Email: sanjograi640@gmail.com</p>
-		<p>LinkedIn: linkedin.com/in/sanjog-rai-.51933241</p>
-	</section>
-
-	<footer>
-		@2026 Sanjog Rai. All Rights Reserved.
-	</footer>
 </body>
 </html>
