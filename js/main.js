@@ -80,3 +80,61 @@ if (savedTheme === 'light') {
     localStorage.setItem('accent', accent);
   });
 });
+
+const navLinks = document.querySelectorAll(".nav-links a");
+  navLinks.forEach(link =>{
+    link.addEventListener("click", function(){
+      navLinks.forEach(item => item.classList.remove('active'));
+      this.classList.add("active");
+    });
+  });
+
+const sr = ScrollReveal({
+  distance: '60px',
+  duration: 1500,
+  delay: 200,
+  reset: false
+
+});
+sr.reveal('.hero-content',{
+  origin:'left'
+});
+sr.reveal('.hero-image',{
+  origin:'right'
+});
+sr.reveal('#about',{
+  origin:'bottom'
+});
+sr.reveal('#skills',{
+  origin:'bottom'
+});
+sr.reveal('#projects',{
+  origin:'bottom'
+});
+sr.reveal('#contact',{
+  origin:'bottom'
+});
+sr.reveal('hero-buttons',{
+  origin:'bottom',
+  delay: 500
+});
+sr.reveal('theme-controls',{
+  origin:'top',
+  delay: 300
+});
+sr.reveal('.navbar',{
+  origin:'top',
+  distance:'20px',
+  duration:1200
+});
+sr.reveal('.skill-category',{
+  origin:'bottom',
+  interval:150,
+  distance:'40px'
+});
+sr.reveal('.project-card',{
+  origin:'bottom',
+  interval: 100,
+  distance: '60px'
+});
+

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar scrolled">
     <div class="logo"> SANJOG RAI </div>
     <!-- Dark/Light mode + Accent Theme -->
     <div class="controls">
@@ -30,8 +30,9 @@
     </div>
     <!-- Navigation Links -->
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -65,27 +66,125 @@
   </header>
 
   <!-- About -->
-  <section id="about">
-    <h2 class="section-title">
-      About Me
-    </h2>
-    <p>
-      I am a passionate WordPress Developer with over 3 years of experience in creating responsive and user-friendly websites. My expertise lies in developing custom themes and plugins, optimizing website performance, and ensuring a seamless user experience. I am dedicated to helping businesses establish a strong online presence through innovative web solutions.
-    </p>
+  <section id="about" class="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>Get to know me better.</p>
+    </div>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="/assets/profile.png" alt="Sanjog Rai">
+      </div>
+      <div class="about-content">
+        <h3>
+          WordPress Developer & Frontend Enthusiast
+        </h3>
+        <p>
+          I'm Sanjog Rai, a wordPress Developer with over 3 years of experience creating responsive, user-friendly website. I enjoy transforming ideas into clean, modern digital experience while continuously learning new technologies.
+        </p>
+        <div class="about-info">
+          <div>
+            <h4>3+</h4>
+            <span>Years Experience</span>
+          </div>
+          <div>
+            <h4>20+</h4>
+            <span>Projects</span>
+          </div>
+          <div>
+            <h4>10+</h4>
+            <span>Certificates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <div class="section-title">
+      <h2>My Skills</h2>
+      <p>Technologies, tools & digital expertise that help me build impactful experiences.</p>
+    </div>
+    <div class="skills-grid">
+      <!-- Frontend skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Frontend</h3>
+        <div class="tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Bootstrap 5</span>
+        </div>
+      </div>
+      <!-- WordPress skills -->
+      <div class="skill-category">
+        <h3><i class="fab fa-wordpress"></i> WordPress</h3>
+        <div class="tags">
+          <span>Theme Development</span>
+          <span>Plugins Customization</span>
+          <span>WooCommerce</span>
+          <span>Client Support</span>
+        </div>
+      </div>
+      <!-- Backend skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-server"></i> Backend & Tools</h3>
+        <div class="tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>Git & GitHub</span>
+          <span>VScode</span>
+          <span>Figma</span>
+        </div>
+      </div>
+      <!-- Marketing skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-chart-line"></i> Digital Marketing</h3>
+        <div class="tags">
+          <span>SEO</span>
+          <span>Socail Media Management</span>
+          <span>Content Strategy</span>
+          <span>Analytics</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2 class="section-title">
-      Projects
-    </h2>
-    <div class="project-card">
-      <h3>
-        Portfolio Website
-      </h3>
-      <p>
-        A personal portfolio website showcasing my skills, projects, and experience as a WordPress Developer. Built with HTML, CSS, and JavaScript, it features a responsive design and smooth animations.
-      </p>
+  <section id="projects" class="projects">
+    <div class="section-title">
+      <h2>
+        Featured Projects
+      </h2>
+      <p>Some of my recent works.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-spotlight"></div>
+        <div class="project-image">
+          <img src="/assets/projects/Yuma-GYM.jpeg" alt="Project-Yuma">
+        </div>
+        <div class="project-content">
+          <h3>Shark GYM | WordPress Theme</h3>
+          <p>
+            Extreme Flexibility, Hassle-Free Installation and Optimized For Performance. Lazy loading, moderate quality image placeholder, Adaptive image sizes and other advanced performance features coded by Pros who have been developing WordPress Themes & Plugins for more than 6 years.
+          </p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>WordPress CMS</span>
+          </div>
+          <div class="project-buttons">
+            <a href="#" class="btn">
+              Live Demo
+            </a>
+            <a href="#" class="btn-outline">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   
@@ -101,6 +200,7 @@
   </section>
 
   <!---JS-->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="/js/main.js"></script>
 
 </body>
