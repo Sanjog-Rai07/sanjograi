@@ -1,0 +1,22 @@
+const projectSwiper = new Swiper(".projectsSwiper",{
+  loop:true,
+  speed:800,
+  spaceBetween:30,
+  grabCursor:true,
+  centeredSlides:false,
+  pagination:{
+    el:".swiper-pagination",
+    clickable:true,
+  },
+  breakpoints:{
+    0:{
+      slidesPerView:1,
+    },
+    768:{
+      slidesPerView:2,
+    },
+    1200:{
+      slidesPerView:3,
+    }
+  }
+});

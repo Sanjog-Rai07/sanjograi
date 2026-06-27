@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -143,7 +144,7 @@
         <h3><i class="fas fa-chart-line"></i> Digital Marketing</h3>
         <div class="tags">
           <span>SEO</span>
-          <span>Socail Media Management</span>
+          <span>Social Media Management</span>
           <span>Content Strategy</span>
           <span>Analytics</span>
         </div>
@@ -152,39 +153,119 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects section">
     <div class="section-title">
       <h2>
         Featured Projects
       </h2>
       <p>Some of my recent works.</p>
     </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-spotlight"></div>
-        <div class="project-image">
-          <img src="/assets/projects/Yuma-GYM.jpeg" alt="Project-Yuma">
-        </div>
-        <div class="project-content">
-          <h3>Shark GYM | WordPress Theme</h3>
-          <p>
-            Extreme Flexibility, Hassle-Free Installation and Optimized For Performance. Lazy loading, moderate quality image placeholder, Adaptive image sizes and other advanced performance features coded by Pros who have been developing WordPress Themes & Plugins for more than 6 years.
-          </p>
-          <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>WordPress CMS</span>
+    <div class="swiper projectsSwiper">
+      <div class="swiper-wrapper">
+        <!-- Card 1 -->
+         <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-spotlight"></div>
+            <div class="project-badge">
+              Featured
+            </div>
+            <div class="browser">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-image">
+              <img src="/assets/projects/Yuma-GYM.png" alt="Portfolio">
+            </div>
+            <div class="project-content">
+              <h3>
+                Shark GYM | WordPress Theme
+              </h3>
+              <p>
+                Extreme Flexibility, Optimized For Performance and other advanced performance features.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>WordPress CMS</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
           </div>
-          <div class="project-buttons">
-            <a href="#" class="btn">
-              Live Demo
-            </a>
-            <a href="#" class="btn-outline">
-              GitHub
-            </a>
+         </div>
+          <!-- Card 2 -->
+         <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-spotlight"></div>
+            <div class="project-badge">
+              Featured
+            </div>
+            <div class="browser">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-image">
+              <img src="/assets/projects/Yuma-GYM.png" alt="Portfolio">
+            </div>
+            <div class="project-content">
+              <h3>
+                Trial 2
+              </h3>
+              <p>
+                Responsible portfolio with dark mode, glassmorphism and animations.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
           </div>
-        </div>
+         </div>
+          <!-- Card 3 -->
+         <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-spotlight"></div>
+            <div class="project-badge">
+              Featured
+            </div>
+            <div class="browser">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-image">
+              <img src="/assets/projects/Yuma-GYM.png" alt="Portfolio">
+            </div>
+            <div class="project-content">
+              <h3>
+                Shark GYM | WordPress
+              </h3>
+              <p>
+                Responsible portfolio with dark mode, glassmorphism and animations.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+         </div>
       </div>
+      <div class="swiper-pagination"></div> <!--for pagination-->
     </div>
   </section>
   
@@ -200,8 +281,10 @@
   </section>
 
   <!---JS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/projects.js"></script>
 
 </body>
 </html>

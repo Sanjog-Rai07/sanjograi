@@ -132,9 +132,10 @@ sr.reveal('.skill-category',{
   interval:150,
   distance:'40px'
 });
-sr.reveal('.project-card',{
+sr.reveal('.swiper-slide',{
   origin:'bottom',
-  interval: 100,
-  distance: '60px'
+  interval:150,
+  diatance:'40px'
 });
+
 
